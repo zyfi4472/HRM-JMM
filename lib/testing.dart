@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './components/splash_screen.dart';
-import 'components/home_screen.dart';
+import 'screens/splash_screen.dart';
+import 'screens/home_screen.dart';
 import 'components/my_button.dart'; // Import the SplashScreen component
 
 void main() {
@@ -120,7 +120,7 @@ class MyHomePage extends StatelessWidget {
           // Navigate to the DetailsScreen
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const DetailsScreen()),
+            MaterialPageRoute(builder: (context) => const HomeScreen()),
           );
         },
       ),
