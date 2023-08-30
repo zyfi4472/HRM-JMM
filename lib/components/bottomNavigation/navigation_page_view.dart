@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hrm/advance_cash_screen.dart';
+import 'package:hrm/screens/advanceCash/advance_cash_screen.dart';
 import 'package:hrm/components/bottomNavigation/bottom_nav.dart';
 import 'package:hrm/components/customDrawer/custom_end_drawer.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hrm/screens/Leaves/leaves_screen.dart';
+import 'package:hrm/screens/Leaves/leaves_record_screen.dart';
 import 'package:hrm/screens/attendance/attendance_page_view.dart';
 import 'package:hrm/screens/home_screen.dart';
 
@@ -65,8 +65,8 @@ class _MyPageViewState extends State<MyPageView> {
         children: [
           const HomeScreen(),
           const AttendancePageView(),
-          LeavesScreen(),
-          const AdvanceCashScreen(),
+          LeavesRecordScreen(),
+          AdvanceCashScreen(),
         ],
       ),
       drawer: CustomEndDrawer(

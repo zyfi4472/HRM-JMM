@@ -25,7 +25,7 @@ class _MyDropdownWidgetState extends State<MyDropdownWidget> {
             ),
           ],
         ),
-        width: 100.w,
+        width: 110.w,
         height: 30.h,
         child: Padding(
           padding: const EdgeInsets.all(8.0),

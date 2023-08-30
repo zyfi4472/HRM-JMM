@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 const kBottomNavTitle = TextStyle(
   fontSize: 10,
   fontWeight: FontWeight.w700,
@@ -27,4 +25,8 @@ const kTextStyleTitle = TextStyle(
 const kTextStyleDate = TextStyle(
   fontSize: 12,
   color: const Color(0XFFB2B2B2),
+);
+
+const kRequestDetails = TextStyle(
+  fontSize: 14,
 );
