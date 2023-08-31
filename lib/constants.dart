@@ -6,6 +6,12 @@ const kBottomNavTitle = TextStyle(
   color: Color(0XFFB2B2B2),
 );
 
+const kBottomNavTitleSelected = TextStyle(
+  fontSize: 10,
+  fontWeight: FontWeight.w700,
+  color: Colors.blue,
+);
+
 const kDrawerNavTitle = TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w900,

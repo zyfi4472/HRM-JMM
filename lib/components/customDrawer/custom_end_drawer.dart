@@ -31,6 +31,7 @@ class CustomEndDrawer extends StatelessWidget {
               navTitle: 'Home',
               svgImagePath: 'assets/home.svg',
               onTap: () => onItemTapped(0),
+              selected: currentIndex == 0,
 
               // destinationRoute: '/home',
             ),
@@ -38,6 +39,7 @@ class CustomEndDrawer extends StatelessWidget {
               navTitle: 'Attendance Record',
               svgImagePath: 'assets/apps-sort.svg',
               onTap: () => onItemTapped(1),
+              selected: currentIndex == 1,
 
               // destinationRoute: '/attendanceRecord',
             ),
@@ -45,6 +47,7 @@ class CustomEndDrawer extends StatelessWidget {
               navTitle: 'Leaves',
               svgImagePath: 'assets/copy.svg',
               onTap: () => onItemTapped(2),
+              selected: currentIndex == 2,
 
               // destinationRoute: '/leaves',
             ),
@@ -52,6 +55,7 @@ class CustomEndDrawer extends StatelessWidget {
               navTitle: 'Advance Cash',
               svgImagePath: 'assets/wallet.svg',
               onTap: () => onItemTapped(3),
+              selected: currentIndex == 3,
 
               // destinationRoute: '/leaves',
             ),

@@ -12,10 +12,12 @@ class NavItem extends StatelessWidget {
     // required this.destinationRoute,
     this.isUsedInDrawer = false,
     required this.onTap,
+    required this.selected,
   });
 
   String navTitle;
   String svgImagePath;
+  final bool selected;
   // final String destinationRoute;
   final bool isUsedInDrawer;
   final VoidCallback onTap;
@@ -48,11 +50,13 @@ class NavItem extends StatelessWidget {
                   SvgPicture.asset(
                     svgImagePath,
                     // height: 20.h,
+                    // ignore: deprecated_member_use
+                    color: selected ? Colors.blue : const Color(0XFFB2B2B2),
                   ),
                   SizedBox(height: 10.h),
                   Text(
                     navTitle,
-                    style: kBottomNavTitle,
+                    style: selected ? kBottomNavTitleSelected : kBottomNavTitle,
                   ),
                 ],
               ),
