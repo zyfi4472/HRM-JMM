@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 class CustomAppBarHome extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
 
-  CustomAppBarHome({super.key, required this.scaffoldKey});
+  const CustomAppBarHome({super.key, required this.scaffoldKey});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,8 @@ class CustomAppBarHome extends StatelessWidget {
             padding: const EdgeInsets.only(top: 70, right: 20.0),
             child: GestureDetector(
               onTap: () => {
-                scaffoldKey.currentState?.openDrawer(),
+                scaffoldKey.currentState?.openEndDrawer(),
+                // ignore: avoid_print
                 print('Right drawer is clicked'),
               },
               child: SvgPicture.asset(

@@ -69,10 +69,10 @@ class _MyPageViewState extends State<MyPageView> {
           AdvanceCashScreen(),
         ],
       ),
-      drawer: CustomEndDrawer(
-        currentIndex: _currentIndex,
-        onItemTapped: _onItemTapped,
-      ),
+      // drawer: CustomEndDrawer(
+      //   currentIndex: _currentIndex,
+      //   onItemTapped: _onItemTapped,
+      // ),
       endDrawer: CustomEndDrawer(
         currentIndex: _currentIndex,
         onItemTapped: _onItemTapped,

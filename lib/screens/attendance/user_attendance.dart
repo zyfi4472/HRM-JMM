@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hrm/screens/attendance/attendanceItem.dart';
+import 'package:hrm/screens/attendance/attendance_item.dart';
 
 // ignore: must_be_immutable
 class UserAttendance extends StatelessWidget {

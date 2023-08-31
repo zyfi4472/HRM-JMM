@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hrm/screens/advanceCash/advance_request_details_widget.dart';
 
 class AdvanceRequestDetails extends StatelessWidget {
-  AdvanceRequestDetails({super.key});
+  const AdvanceRequestDetails({super.key});
 
   @override
   Widget build(BuildContext context) {

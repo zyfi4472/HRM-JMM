@@ -19,12 +19,12 @@ const kBodyText = TextStyle(
 
 const kTextStyleTitle = TextStyle(
   fontSize: 14,
-  color: const Color(0XFF2681C1),
+  color: Color(0XFF2681C1),
 );
 
 const kTextStyleDate = TextStyle(
   fontSize: 12,
-  color: const Color(0XFFB2B2B2),
+  color: Color(0XFFB2B2B2),
 );
 
 const kRequestDetails = TextStyle(

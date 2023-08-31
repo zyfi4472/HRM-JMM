@@ -67,10 +67,10 @@ class LeavesRecordScreen extends StatelessWidget {
             alignment: Alignment.centerLeft,
             color: const Color(0XFFF9F9F9),
             height: 50.h,
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
+                Text(
                   'Showing all records',
                   style: TextStyle(fontSize: 16),
                 ),

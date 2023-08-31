@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hrm/constants.dart';
-import 'package:hrm/screens/Leaves/leave_request_details.dart';
 import 'package:hrm/screens/advanceCash/advance_request_details.dart';
 
 // ignore: must_be_immutable
@@ -27,7 +26,7 @@ class AdvanceCashListWidget extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => AdvanceRequestDetails(),
+              builder: (context) => const AdvanceRequestDetails(),
             ),
           );
         },

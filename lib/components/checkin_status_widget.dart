@@ -5,7 +5,7 @@ class CheckInStatusWidget extends StatelessWidget {
   final bool isCheckedIn;
   final String? checkInTime;
 
-  CheckInStatusWidget({
+  const CheckInStatusWidget({
     super.key,
     required this.isCheckedIn,
     required this.checkInTime,

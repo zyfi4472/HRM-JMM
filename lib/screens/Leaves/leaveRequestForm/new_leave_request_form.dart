@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hrm/screens/Leaves/leaveRequestForm/request_form_widget.dart';
+import 'package:hrm/screens/Leaves/leaveRequestForm/leave_request_form_widget.dart';
 
 class LeaveRequestForm extends StatelessWidget {
   const LeaveRequestForm({super.key});
@@ -13,7 +13,7 @@ class LeaveRequestForm extends StatelessWidget {
           child: Text('Leave Request Details'),
         ),
       ),
-      body: const RequestFormWidget(),
+      body: const LeaveRequestFormWidget(),
     );
   }
 }

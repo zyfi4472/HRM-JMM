@@ -24,22 +24,22 @@ class BottomNav extends StatelessWidget {
             child: Row(
               children: [
                 NavItem(
-                  NavTitle: 'Home',
+                  navTitle: 'Home',
                   svgImagePath: 'assets/home.svg',
                   onTap: () => onItemTapped(0),
                 ),
                 NavItem(
-                  NavTitle: 'Attendance Record',
+                  navTitle: 'Attendance Record',
                   svgImagePath: 'assets/apps-sort.svg',
                   onTap: () => onItemTapped(1),
                 ),
                 NavItem(
-                  NavTitle: 'Leaves',
+                  navTitle: 'Leaves',
                   svgImagePath: 'assets/copy.svg',
                   onTap: () => onItemTapped(2),
                 ),
                 NavItem(
-                  NavTitle: 'Advance Cash',
+                  navTitle: 'Advance Cash',
                   svgImagePath: 'assets/wallet.svg',
                   onTap: () => onItemTapped(3),
                 ),

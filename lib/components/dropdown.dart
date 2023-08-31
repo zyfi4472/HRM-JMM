@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyDropdownWidget extends StatefulWidget {
+  const MyDropdownWidget({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _MyDropdownWidgetState createState() => _MyDropdownWidgetState();
 }
 
@@ -25,7 +28,7 @@ class _MyDropdownWidgetState extends State<MyDropdownWidget> {
             ),
           ],
         ),
-        width: 110.w,
+        width: 130.w,
         height: 30.h,
         child: Padding(
           padding: const EdgeInsets.all(8.0),

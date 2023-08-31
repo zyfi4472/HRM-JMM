@@ -28,28 +28,28 @@ class CustomEndDrawer extends StatelessWidget {
               ),
             ),
             NavItem(
-              NavTitle: 'Home',
+              navTitle: 'Home',
               svgImagePath: 'assets/home.svg',
               onTap: () => onItemTapped(0),
 
               // destinationRoute: '/home',
             ),
             NavItem(
-              NavTitle: 'Attendance Record',
+              navTitle: 'Attendance Record',
               svgImagePath: 'assets/apps-sort.svg',
               onTap: () => onItemTapped(1),
 
               // destinationRoute: '/attendanceRecord',
             ),
             NavItem(
-              NavTitle: 'Leaves',
+              navTitle: 'Leaves',
               svgImagePath: 'assets/copy.svg',
               onTap: () => onItemTapped(2),
 
               // destinationRoute: '/leaves',
             ),
             NavItem(
-              NavTitle: 'Advance Cash',
+              navTitle: 'Advance Cash',
               svgImagePath: 'assets/wallet.svg',
               onTap: () => onItemTapped(3),
 
@@ -57,7 +57,7 @@ class CustomEndDrawer extends StatelessWidget {
             ),
             SizedBox(height: 30.h),
             // NavItem(
-            //   NavTitle: 'Pay Slip',
+            //   navTitle: 'Pay Slip',
             //   svgImagePath: 'assets/receipt.svg',
             //   // destinationRoute: '/leaves',
             //   isUsedInDrawer: true,

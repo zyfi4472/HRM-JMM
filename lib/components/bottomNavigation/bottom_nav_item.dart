@@ -7,14 +7,14 @@ import '../../constants.dart';
 class NavItem extends StatelessWidget {
   NavItem({
     super.key,
-    required this.NavTitle,
+    required this.navTitle,
     required this.svgImagePath,
     // required this.destinationRoute,
     this.isUsedInDrawer = false,
     required this.onTap,
   });
 
-  String NavTitle;
+  String navTitle;
   String svgImagePath;
   // final String destinationRoute;
   final bool isUsedInDrawer;
@@ -36,7 +36,7 @@ class NavItem extends StatelessWidget {
                     ),
                     SizedBox(width: 20.w),
                     Text(
-                      NavTitle,
+                      navTitle,
                       style: kDrawerNavTitle,
                     ),
                   ],
@@ -49,9 +49,9 @@ class NavItem extends StatelessWidget {
                     svgImagePath,
                     // height: 20.h,
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 10.h),
                   Text(
-                    NavTitle,
+                    navTitle,
                     style: kBottomNavTitle,
                   ),
                 ],

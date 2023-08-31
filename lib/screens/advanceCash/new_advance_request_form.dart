@@ -10,7 +10,7 @@ class AdvanceRequestForm extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xff0F5A8E),
         title: const Center(
-          child: Text('Leave Request Details'),
+          child: Text('New Request'),
         ),
       ),
       body: const AdvanceRequestFormWidget(),
