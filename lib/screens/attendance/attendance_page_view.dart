@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hrm/screens/attendance/absent_page.dart';
-import 'package:hrm/screens/attendance/all_attendace_record.dart';
-import 'package:hrm/screens/attendance/leaves_page.dart';
+import 'package:hrm/screens/attendance/absent_page_screen.dart';
+import 'package:hrm/screens/attendance/all_attendace_record_screen.dart';
+import 'package:hrm/screens/attendance/leaves_page_screen.dart';
 
 class AttendancePageView extends StatelessWidget {
   const AttendancePageView({super.key});
@@ -46,9 +46,9 @@ class _MyPageViewState extends State<MyPageView> {
         ),
         body: TabBarView(
           children: [
-            AttendanceRecord(),
-            AbsentPage(),
-            LeavesPage(),
+            AllAttendanceRecordScreen(),
+            AbsentPageScreen(),
+            LeavesPageScreen(),
           ],
         ),
       ),

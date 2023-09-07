@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hrm/components/bottomNavigation/bottom_nav_item.dart';
+import 'package:hrm/components/bottomNavigation/components/bottom_nav_item.dart';
 
 class CustomEndDrawer extends StatelessWidget {
   const CustomEndDrawer({

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hrm/components/dropdown.dart';
-import 'package:hrm/screens/Leaves/leave_list_widget.dart';
-import 'package:hrm/screens/Leaves/leaveRequestForm/new_leave_request_form.dart';
+import 'package:hrm/components/dropdown/dropdown.dart';
+import 'package:hrm/screens/Leaves/components/leave_list_widget.dart';
+import 'package:hrm/screens/Leaves/new_leave_request_form_screen.dart';
+
+import 'components/dialogue_box.dart';
 
 class LeavesRecordScreen extends StatelessWidget {
   LeavesRecordScreen({super.key});
@@ -106,7 +108,8 @@ class LeavesRecordScreen extends StatelessWidget {
               child: FloatingActionButton(
                 backgroundColor: const Color(0XFF2681C1),
                 onPressed: () {
-                  _showDialog(context);
+                  LeaveTypeDialog.show(context); // Call the showDialog method from the new class
+
                 },
                 child: const Icon(
                   Icons.add,
@@ -121,74 +124,3 @@ class LeavesRecordScreen extends StatelessWidget {
   }
 }
 
-void _showDialog(BuildContext context) {
-  showDialog(
-    // barrierColor: Colors.white,
-    context: context,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        backgroundColor: Colors.white,
-        title: const Text(
-          'Leave type',
-          style: TextStyle(color: Color(0XFF141433)),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text(
-              'Please select leave type for which you want to apply',
-              style: TextStyle(
-                color: Color(0XFF78787B),
-                fontSize: 12,
-              ),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const LeaveRequestForm(),
-                  ),
-                );
-              },
-              child: const Text('Casual Leave'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const LeaveRequestForm(),
-                  ),
-                );
-              },
-              child: const Text('Annual Leave'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const LeaveRequestForm(),
-                  ),
-                );
-              },
-              child: const Text('Sick Leave'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const LeaveRequestForm(),
-                  ),
-                );
-              },
-              child: const Text('Others'),
-            ),
-          ],
-        ),
-      );
-    },
-  );
-}

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hrm/components/appBar/app_bar_home.dart';
+import 'package:hrm/screens/home/components/app_bar_home.dart';
 import 'package:intl/intl.dart'; // Import the intl package for DateFormat
-import 'package:hrm/components/my_button.dart';
+import 'package:hrm/screens/home/components/my_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../components/checkin_status_widget.dart';
+import 'components/checkin_status_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -22,17 +22,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Scaffold.of(context).openEndDrawer();
-        },
-      ),
       body: Column(
         children: [
           CustomAppBarHome(
             scaffoldKey: scaffoldKey,
           ),
-
           SizedBox(height: 30.h),
           CheckInStatusWidget(
             isCheckedIn: isCheckedIn,

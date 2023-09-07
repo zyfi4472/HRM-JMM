@@ -57,7 +57,7 @@ class CustomAppBarHome extends StatelessWidget {
             padding: const EdgeInsets.only(top: 70, right: 20.0),
             child: GestureDetector(
               onTap: () => {
-                scaffoldKey.currentState?.openEndDrawer(),
+                Scaffold.of(context).openEndDrawer(),
                 // ignore: avoid_print
                 print('Right drawer is clicked'),
               },

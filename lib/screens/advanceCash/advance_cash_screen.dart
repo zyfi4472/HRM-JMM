@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hrm/components/dropdown.dart';
-import 'package:hrm/screens/advanceCash/advancecash_list_widget.dart';
-import 'package:hrm/screens/advanceCash/new_advance_request_form.dart';
+import 'package:hrm/components/dropdown/dropdown.dart';
+import 'package:hrm/screens/advanceCash/components/advancecash_record_widget.dart';
+
+import 'new_advance_request_form_screen.dart';
 
 class AdvanceCashScreen extends StatelessWidget {
   AdvanceCashScreen({super.key});
@@ -98,7 +99,7 @@ class AdvanceCashScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const AdvanceRequestForm(),
+                      builder: (context) => const AdvanceRequestFormScreen(),
                     ),
                   );
                 },
