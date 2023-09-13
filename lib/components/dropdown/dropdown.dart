@@ -17,7 +17,7 @@ class _MyDropdownWidgetState extends State<MyDropdownWidget> {
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(5.r),
           color: const Color(0XFFFFFFFF),
           boxShadow: [
             BoxShadow(

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart'; // Import the intl package for DateFormat
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../components/appBar/custom_app_bar_home.dart';
-import '../../../components/checkin_status_widget.dart';
-import '../../../components/my_button.dart';
+import '../widgets/custom_app_bar_home.dart';
+import '../widgets/checkin_status_widget.dart';
+import '../widgets/my_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -37,19 +37,20 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               width: 240.w,
               height: 43.h,
-              child: const Text(
+              child: Text(
                 'Here is the time when you checked in',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Color(0xff78787B)),
+                style:
+                    TextStyle(color: const Color(0xff78787B), fontSize: 20.sp),
               ),
             ),
-          // const SizedBox(height: 10),
+          const SizedBox(height: 10),
           if (checkInTime != null && isCheckedIn)
             Text(
               'Check-in Time: $checkInTime',
               style: TextStyle(color: const Color(0xff2681C1), fontSize: 18.sp),
             ),
-          SizedBox(height: 150.h),
+          SizedBox(height: 140.h),
           MyButton(
             signIn: () {
               // Get the current time when the button is clicked
@@ -72,10 +73,13 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               width: 240.w,
               height: 43.h,
-              child: const Text(
+              child: Text(
                 'Please tap the Button to mark your Attendance for today',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Color(0xff78787B)),
+                style: TextStyle(
+                  color: const Color(0xff78787B),
+                  fontSize: 16.sp,
+                ),
               ),
             ),
         ],

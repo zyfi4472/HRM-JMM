@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hrm/components/bottomNavigation/navigation_page_view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../components/my_button.dart';
+import '../../home/widgets/my_button.dart';
 
 
 class LoginScreen extends StatelessWidget {
