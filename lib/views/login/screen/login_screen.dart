@@ -3,7 +3,6 @@ import 'package:hrm/components/bottomNavigation/navigation_page_view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../home/widgets/my_button.dart';
 
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -91,7 +90,7 @@ class LoginScreen extends StatelessWidget {
                         style: TextStyle(
                             color: const Color(0xff2681C1),
                             fontWeight: FontWeight.w400,
-                            fontSize: 18.sp, // Adjust the font size as needed
+                            fontSize: 16.sp, // Adjust the font size as needed
                             decoration: TextDecoration.underline
                             // You can also set other text style properties here
                             ),

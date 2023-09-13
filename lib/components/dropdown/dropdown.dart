@@ -23,7 +23,7 @@ class _MyDropdownWidgetState extends State<MyDropdownWidget> {
             BoxShadow(
               color: Colors.grey.withOpacity(0.5), // Shadow color
               // spreadRadius: 2, // Spread radius
-              blurRadius: 5, // Blur radius
+              blurRadius: 5.r, // Blur radius
               offset: const Offset(0, 3), // Offset in the (x, y) direction
             ),
           ],

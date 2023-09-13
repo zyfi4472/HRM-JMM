@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "641621420643",
+    "project_id": "hrm-jmm",
+    "storage_bucket": "hrm-jmm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641621420643:android:8b6a814250f9256345a656",
+        "android_client_info": {
+          "package_name": "com.example.hrm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl38nEmIYl-KyIxEIaSTOT2TnzYnDtX_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,9 +5,6 @@ import 'package:hrm/components/dropdown/dropdown.dart';
 import '../widgets/dialogue_box.dart';
 import '../widgets/leave_list_widget.dart';
 
-
-
-
 class IndexLeavesRecordScreen extends StatelessWidget {
   IndexLeavesRecordScreen({super.key});
 
@@ -71,14 +68,14 @@ class IndexLeavesRecordScreen extends StatelessWidget {
             alignment: Alignment.centerLeft,
             color: const Color(0XFFF9F9F9),
             height: 50.h,
-            child: const Row(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   'Showing all records',
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(fontSize: 16.sp),
                 ),
-                MyDropdownWidget(),
+                const MyDropdownWidget(),
               ],
             ),
           ),
@@ -110,8 +107,8 @@ class IndexLeavesRecordScreen extends StatelessWidget {
               child: FloatingActionButton(
                 backgroundColor: const Color(0XFF2681C1),
                 onPressed: () {
-                  LeaveTypeDialog.show(context); // Call the showDialog method from the new class
-
+                  LeaveTypeDialog.show(
+                      context); // Call the showDialog method from the new class
                 },
                 child: const Icon(
                   Icons.add,
@@ -125,4 +122,3 @@ class IndexLeavesRecordScreen extends StatelessWidget {
     );
   }
 }
-
